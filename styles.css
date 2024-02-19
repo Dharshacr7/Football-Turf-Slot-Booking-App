@@ -7,6 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --main-clr: #040303;
+    --sec-clr: #461111;
+    --btn-clr: #A13333;
+    --txt-clr:#B3541E;
+    --btn-hvr-clr: #c84040;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -18,12 +26,12 @@ html {
     flex-wrap: wrap;
     height: 70px;
     max-width: 1440px;
-    background-color: #c3c3c3;
-
+    background-color: var(--main-clr);
 }
 
 .navbar .logo h1{
     font-size: 26px;
+    color: var(--txt-clr);
 }
 .navbar .links{
     display: flex;
@@ -34,19 +42,59 @@ html {
 .navbar .links a{
     font-weight: 400;
     text-decoration: none;
-    color: rgb(49, 45, 45);
+    color: var(--txt-clr);
 }
 .navbar .links button{
     padding: 4px 15px;
     display: flex;
     align-items: center;
-    background-color: rgb(21, 20, 20);
+    background-color: var(--btn-clr);
     color: white;
     border: none;
     border-radius: 10px;
     gap: 5px;
+    cursor: pointer;
     transition: background-color 0.2s;
 }
 .navbar .links button:hover{
-    background-color: rgba(0, 0, 0, 0.721);
+    background-color: var(--btn-hvr-clr);
+}
+
+
+.main1{
+    min-height: 70vh;
+    min-width: 100%;
+    background-image: url('./assets/man-wearing-t-shirt-gesturing.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.main1  .hero-text{
+    background-color: #b3551ec4;
+    max-width: 1300px;
+    min-height: 70vh;
+    align-items: center;
+    text-align: center;
+    padding: 7rem;
+}
+.main1 .hero-text p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.main1 .hero-text h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main1 .hero-text button{
+    padding: 4px 15px;
+    background-color: var(--sec-clr);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.main1 .hero-text button:hover{
+    background-color: var(--btn-hvr-clr);
 }
