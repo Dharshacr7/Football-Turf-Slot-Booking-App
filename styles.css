@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 :root{
@@ -37,7 +38,7 @@ html {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
 }
 .navbar .links a{
     font-weight: 400;
@@ -86,7 +87,7 @@ html {
     margin-bottom: 20px;
 }
 
-.main1 .hero-text button{
+.main1 .hero-text a{
     padding: 4px 15px;
     background-color: var(--sec-clr);
     color: white;
@@ -95,6 +96,87 @@ html {
     transition: background-color 0.2s;
     cursor: pointer;
 }
-.main1 .hero-text button:hover{
+.main1 .hero-text a:hover{
     background-color: var(--btn-hvr-clr);
+}
+
+footer{
+    min-height: 40vh;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-clr);
+    color: var(--txt-clr);
+}
+footer .footer-logo{
+    font-size: 18px;
+}
+footer .works{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+footer .works a{
+    color: var(--txt-clr);
+    transition: all 0.3s;
+}
+footer .works a:hover{
+    transform: translateX(10px);
+    color: var(--btn-hvr-clr);
+}
+
+footer .socials{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+footer .socials a{
+    color: var(--txt-clr);
+    transition: all 0.3s;
+}
+footer .socials a:hover{
+    transform: translateX(10px);
+    color: var(--btn-hvr-clr);
+}
+
+footer h4{
+    color: var(--btn-clr);
+}
+
+
+@media (max-width:600px) {
+    .navbar .logo h1{
+        font-size: 18px;
+    }
+    .navbar .links{
+        font-size: 14px;
+    }
+    .navbar .links a{
+        margin-bottom: 5px;
+    }
+    .navbar .links button{
+        padding: 0px 19px;
+        margin-bottom: 5px;
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        gap: 2rem;
+    }
+    footer .works{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
