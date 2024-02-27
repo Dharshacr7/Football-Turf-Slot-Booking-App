@@ -71,7 +71,7 @@ html {
     position: relative;
 }
 .main1  .hero-text{
-    background-color: #b3551ec4;
+    
     max-width: 1300px;
     min-height: 70vh;
     align-items: center;
@@ -179,4 +179,31 @@ footer h4{
         align-items: center;
     }
 
+}
+
+
+.main1 .box{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.858);
+    /* padding: 5rem; */
+    display: flex;
+    flex-direction: row;
+    z-index: inherit;  
+    align-items: center;
+    justify-content: center;
+}
+.box form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#popupbox{
+    display: none;
+    padding: 5rem;
+}
+.box form h3{
+    color: var(--txt-clr);
 }
